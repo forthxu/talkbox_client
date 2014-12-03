@@ -24,7 +24,7 @@ http://forthxu.com/blog/skynet.html
     </config>
 
 #### web访问的安全策略问题
-注意：如果通过网页来访问需要提供安全策略，详：http://zuoqiang.iteye.com/blog/942067，我采用的nodejs，回头再改成skynet
+注意：如果通过网页来访问需要提供安全策略，详：http://zuoqiang.iteye.com/blog/942067  ，我采用的nodejs，回头再改成skynet
 
     # 安装nodejs
     # centos
