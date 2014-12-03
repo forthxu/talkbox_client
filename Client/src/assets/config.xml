@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<ip>forthxu.com</ip>
+<port>10101</port>
+<crossdomain>xmlsocket://forthxu.com:843</crossdomain>
+</config>

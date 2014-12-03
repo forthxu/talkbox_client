@@ -1,0 +1,79 @@
+package player_data;
+message CheckID
+{
+	required int32 UserId = 1;   		//用户ID
+}
+message ErrorId
+{
+	required int32 ID = 1;   		//用户ID
+}
+message CreateUserInfo 
+{
+	required int32 Sex = 1;   		//性别
+	required int32 Namelenth = 2;	//角色名长度
+	required string Name = 3;			//角色名
+	required int32 Hair = 4;			//头发
+	required int32 Eyes = 5;			//眼睛
+	required int32 Clothes = 6;		//衣服
+	required int32 Body = 7;			//身体
+}
+message GetName
+{
+	required int32 Namelenth = 1;	//角色名长度
+	required string Name = 2;			//角色名
+}
+message UserInfo
+{
+		required int32 Sex = 1;   				//性别
+		required int32 UserId = 2;				//玩家ID
+		required int32 Namelenth = 3;			//角色名长度
+		required string Name = 4;					//角色名
+		required int32 Level = 5;					//等级
+		required int32 CurrentExp = 6;		//当前经验
+		required int32 MoneyGold = 7;			//钱，金
+		required int32 MoneyCopper = 8;		//钱，铜
+		required int32 Hair = 9;					//头发
+		required int32 Eyes = 10;					//眼睛
+		required int32 Clothes = 11;			//衣服
+		required int32 Body = 12;					//身体
+		required int32 Shadow = 13;				//影子
+		required int32 Background = 14;		//背景
+		required int32 MVP = 15;					//MVP
+		required int32 VIP = 16;					//VIP
+		required int32 PlayTotal = 17;		//玩的总数
+		required int32 PlayWin = 18;			//玩的胜利数
+		required int32 PlayLose = 19;			//玩的失败数
+		required int32 PlayRun = 20;			//玩的逃跑数
+}
+message RoomList
+{
+	repeated RoomMan roomMans = 1;			//房间中的人物列表
+	required int32 roomIndex = 2;				//房间的index
+	message RoomMan
+	{
+		required int32 Sex = 1;   				//性别
+		required int32 UserId = 2;				//玩家ID
+		required int32 Namelenth = 3;			//角色名长度
+		required string Name = 4;					//角色名
+		required int32 Level = 5;					//等级
+		required int32 Hair = 6;					//头发
+		required int32 Eyes = 7;					//眼睛
+		required int32 Clothes = 8;				//衣服
+		required int32 Body = 9;					//身体
+		required int32 Shadow = 10;				//影子
+		required int32 Background = 11;		//背景
+		required int32 RoomHost = 12;			//房主
+		required int32 RoleId = 13;				//角色Id
+		required int32 Seat = 14;					//座位
+		required int32 Team = 15;					//队伍
+		required int32 Blood = 16;				//血量
+		required int32 IsMark =17;				//是否有标记要断定
+		required int32 IsLooper = 18;			//是否回合者
+		required int32 IsStoreGas = 19;		//是否有蓄气
+		required int32 IsAcceptAttack = 20;			//是否受到普通攻击
+		required int32 IsAcceptSkill = 21;			//是否受到技能攻击 
+		required int32 IsAcceptMagic = 22;			//是否受到天命攻击
+		required int32 IsHelp = 23;							//是否需要求救
+		required int32 attackNumber = 24;				//普通攻击的次数 
+	}
+}
